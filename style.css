@@ -119,48 +119,52 @@ a:hover{
 /* Slider */
 
 .slide {
-    display: none;
-    flex-direction: column;
+    width: 100%;
+    /* display: none; */
+    opacity: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 0.7s;
+    position: absolute;
+}
+
+.home {
+    margin: 0 auto;
 }
 
 .slide.active {
-    display: flex;
+    /* display: flex; */
+    opacity: 1;
 }
 
 .slide img {
     width: 700px;
     height: 700px;
-    position: absolute;
     right: 25rem;
 }
 
 .slide h1{
-    position: absolute;
     text-align: left;
-    left: 20rem;
-    top: 13rem;
     font-size: 100px;
     color: #fff;
 }
 
 .slide h2{
-    position: absolute;
-    left: 20rem;
-    top: 20rem;
+    text-align: left;
     font-size: 60px;
     color: #fff;
 }
 
 .slide p{
     text-align: left;
-    position: absolute;
-    left: 20rem;
-    top: 27rem;
     font-size: 20px;
     color: #fff;
     max-width: 30rem;
+    line-height: 30px;
+    font-family: "Raleway", serif;
 }
 
 .controls{
