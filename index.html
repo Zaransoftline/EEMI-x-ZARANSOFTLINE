@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese car showcase</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/japan.png">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+
+        <!-- Checkbox for toggling menu -->
+        <input type="checkbox" id="check">
+
+        <!-- Menu icon -->
+        <label for="check" class="checkbtn">
+            <i class='bx bx-menu'></i>
+        </label>
+
+        <!-- Site logo -->
+        <label class="logo">Car Showcase</label>
+
+        <!-- Navigation links -->
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#mechanical">Mechanical Parts</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="home" id="home">
+        <div class="elements">
+
+            <!-- Mechanical parts -->
+            <div class="mechanial" id="mechanical">
+
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider">
+            <!-- This is the active slide which is showing on screen. JavaScript changes this active class -->
+            <div class="slide active">
+                <img src="images/mk4.png" alt="Image 1">
+                <h1>Toyota</h1>
+                <h2>Supra MK4</h2>
+                <p>Supra MK4 has six-cylinder twin turbocharged engine with 5- or 6-speed manual transmission. Some MK4s have 4-speed automatic transmission too. MK4s accelerate from 0 to 100km/h in just 4.9 seconds.</p>
+            </div>
+            <!-- All the different slides down below -->
+            <div class="slide">
+                <img src="images/m4.png" alt="Image 2">
+                <h1>BMW</h1>
+                <h2>M4 Competition</h2>
+                <p>This is the description for Slide 2.</p>
+            </div>
+            <div class="slide">
+                <img src="images/gtr.png" alt="Image 3">
+                <h1>Nissan</h1>
+                <h2>GTR</h2>
+                <p>This is the description for Slide 3.</p>
+            </div>
+            <div class="slide">
+                <img src="images/r34.png" alt="Image 3">
+                <h1>Nissan</h1>
+                <h2>GT-R R34</h2>
+                <p>This is the description for Slide 4.</p>
+            </div>
+            <div class="slide">
+                <img src="images/wrx.png" alt="Image 3">
+                <h1>Subaru</h1>
+                <h2>WRX</h2>
+                <p>This is the description for Slide 5.</p>
+            </div>
+            <div class="slide">
+                <img src="images/cls.png" alt="Image 3">
+                <h1>Mercedes</h1>
+                <h2>CLS</h2>
+                <p>This is the description for Slide 6.</p>
+            </div>
+        </div>
+        <!-- Control buttons to show next and previous slides -->
+        <div class="controls">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
